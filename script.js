@@ -144,7 +144,7 @@ class SmoothScrollManager {
 function openEmailCompose() {
     const subject = encodeURIComponent("Portfolio Contact - Let's Connect");
     const body = encodeURIComponent("Hi Tej,\n\nI found your portfolio website and would like to discuss potential opportunities.\n\nBest regards,");
-    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=tejgokani@gmail.com&su=${subject}&body=${body}`;
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=tejmgokani@gmail.com&su=${subject}&body=${body}`;
     
     window.open(gmailUrl, '_blank', 'noopener,noreferrer');
 }
@@ -250,7 +250,7 @@ class FormManager {
         const emailButtons = document.querySelectorAll('.email-link, .contact-link[href^="mailto:"]');
         emailButtons.forEach(button => {
             button.addEventListener('click', (e) => {
-                if (button.textContent.includes('tejgokani@gmail.com')) {
+                if (button.textContent.includes('tejmgokani@gmail.com')) {
                     e.preventDefault();
                     openEmailCompose();
                 }
